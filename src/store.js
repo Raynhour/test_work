@@ -31,7 +31,7 @@ export const store = new Vuex.Store({
   },
   actions: {
     itemsLoad(store) {
-      axios.get(`http://localhost:8080/test.json`)
+      axios.get(`https://raynhour.github.io/test.json`)
       .then(response => {
         store.commit('itemsLoad', response.data);
       })
